@@ -1,13 +1,17 @@
-import { createContext, useState } from "react"
+import Quiz from "./components/Quiz"
+import Result from "./components/Result"
 import Start from "./components/Start"
+import { DataProvider } from "./context/dataContext"
 
 
 const App = () => {
   
   return (
-    <div className="flex justify-center items-center h-screen bg-[#282c34] ">
+    <DataProvider >
       <Start />
-    </div>
+      <Quiz />
+      <Result/>
+    </DataProvider>
   )
 }
 
