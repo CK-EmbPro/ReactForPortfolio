@@ -1,7 +1,13 @@
+import Header from "./components/Header"
+import Switch from "./components/Switch"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Header>
+        <Switch />
+      </Header>
+    </div>
   )
 }
 

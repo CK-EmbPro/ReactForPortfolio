@@ -1,7 +1,18 @@
+import "../styles/header.css"
 
-const Header = () => {
+type HeaderProps = {
+    children: React.ReactNode
+}
+const Header = ({children}: HeaderProps) => {
   return (
-    <div>Header</div>
+    <div>
+        <div>
+            <p>Social Media Dashboard</p>
+            <p>Total Followers: 23, 004</p>
+        </div>
+
+        {children}
+    </div>
   )
 }
 
