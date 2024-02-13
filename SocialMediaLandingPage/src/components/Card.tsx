@@ -4,10 +4,11 @@ type CardProps = {
     followers: string,
     todayFollowers: number,
     icon: string,
-    name: string
+    name: string,
+    key: PropertyKey
 }
 
-const Card = ({userName, followers, todayFollowers, icon, name }: CardProps) => {
+const Card = ({userName, followers, todayFollowers, icon, name, key }: CardProps) => {
   return (
     <article>
         <p className="card-title">
