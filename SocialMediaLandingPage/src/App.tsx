@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import Switch from "./components/Switch"
+import "./styles/global.css"
 
 const App = () => {
   return (

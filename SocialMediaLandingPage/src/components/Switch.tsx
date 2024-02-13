@@ -8,7 +8,6 @@ const Switch = () => {
         <p>Dev Mode</p>
         <input ref={ref}  className="checkbox" type="checkbox" id="colortheme" />
         <label className="switch" htmlFor="colortheme">
-
         </label>
     </div>
   )
