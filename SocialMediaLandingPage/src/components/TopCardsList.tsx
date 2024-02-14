@@ -1,5 +1,6 @@
 import { generate as id } from "shortid";
 import Card from "./Card";
+import "../styles/top-cards.css"
 
 const cardListData = [
   {
@@ -36,9 +37,9 @@ const TopCardsList = () => {
   return (
     <section className="top-card">
         <div className="wrapper">
-            <div className="grid">
+            <div className="flexBox">
                 {
-                    cardListData.map((cardData)=> <Card key={id} {...cardData} />)
+                    cardListData.map((cardData, index)=> <Card key={index} {...cardData} />)
                 }
             </div>
         </div>

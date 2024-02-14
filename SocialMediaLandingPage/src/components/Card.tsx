@@ -1,16 +1,15 @@
-
+import "../styles/card.css"
 type CardProps = {
     userName: string,
     followers: string,
     todayFollowers: number,
     icon: string,
     name: string,
-    key: PropertyKey
 }
 
-const Card = ({userName, followers, todayFollowers, icon, name, key }: CardProps) => {
+const Card = ({userName, followers, todayFollowers, icon, name }: CardProps) => {
   return (
-    <article>
+    <article className={`card ${name}`}>
         <p className="card-title">
             <img src={icon} alt="No img"  />
             {userName}
