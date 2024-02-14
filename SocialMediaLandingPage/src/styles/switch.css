@@ -17,7 +17,7 @@
     height: 40px;
     display: block;
     border-radius: 20px;
-    background-color: var(--switch);
+    background: var(--switch);
     width: 80px;
     padding: 5px;
     box-sizing: border-box;

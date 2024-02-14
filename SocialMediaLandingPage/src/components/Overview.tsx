@@ -33,7 +33,7 @@ const Overview = () => {
   return (
     <section className="overview">
         <div className="wrapper">
-            <h2>Overview - Today</h2>
+            <h2 className="headingTwo">Overview - Today</h2>
 
             <div className="overviewBox">
                 {
