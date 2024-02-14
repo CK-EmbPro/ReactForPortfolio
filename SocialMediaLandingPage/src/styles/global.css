@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
   margin: 0;
@@ -30,14 +30,17 @@ body {
 }
 
 .flexBox {
-  display:flex;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2em;
 }
 
-.overviewBox{
+.overviewBox {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -73,13 +76,82 @@ body {
     --lightGray: #1d2029;
     --cardTitle: #8088ad;
     --switchSpinner: #282943;
-    --switch: linear-gradient(to right, #4796d2 0%,#37cebf 100% )
+    --switch: linear-gradient(to right, #4796d2 0%, #37cebf 100%);
   }
 }
 
-
-
-.headerTitle{
+.headerTitle {
   font-size: 1.9em;
-  font-weight:700;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 480px) {
+  .flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+   
+  }
+
+  .overviewBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: ;
+   
+  }
+
+
+}
+
+@media screen and (min-width: 768px) {
+  .flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+   
+  }
+
+  .overviewBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  .flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overviewBox {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: ;
+    
+  }
+
+
 }
