@@ -4,7 +4,7 @@
   background: var(--cardGray);
   border-radius: 8px;
   padding: 1em;
-  width: 23%;
+  width: 100%;
   gap: 1.2em;
 }
 
@@ -54,4 +54,46 @@
 
 .card-small-percentage img {
   margin-right: 5px;
+}
+
+
+@media screen and (min-width: 480px){
+  .card-small {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--cardGray);
+    border-radius: 8px;
+    padding: 1em;
+    width: 45%;
+    gap: 1.2em;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .card-small {
+    display: flex;
+    flex-direction: column;
+   
+    background: var(--cardGray);
+    border-radius: 8px;
+    padding: 1em;
+    width: 30%;
+    gap: 1em;
+  }
+}
+
+
+@media screen and (min-width: 1024px){
+  .card-small {
+    display: flex;
+    flex-direction: column;
+   
+    background: var(--cardGray);
+    border-radius: 8px;
+    padding: 1em;
+    width: 22%;
+    gap: 1em;
+  }
 }

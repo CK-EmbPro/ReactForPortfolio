@@ -41,7 +41,8 @@ body {
 .overviewBox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2em;
 }
 
 /* Classifying the defined variable into color themes */
@@ -93,21 +94,16 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2em;
-   
   }
 
   .overviewBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    width: ;
-   
+    gap: 2em;
   }
-
-
 }
 
 @media screen and (min-width: 768px) {
@@ -117,22 +113,19 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2em;
-   
+    gap: 4em;
   }
 
   .overviewBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    
+    gap: 2em;
+   
   }
-
-
 }
-
 
 @media screen and (min-width: 1024px) {
   .flexBox {
@@ -141,17 +134,17 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  
+    gap: 3vw;
   }
 
   .overviewBox {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    width: ;
-    
+ 
+    gap: 3vw;
+  
   }
-
-
 }
