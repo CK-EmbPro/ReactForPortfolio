@@ -27,7 +27,7 @@ const Home = () => {
             Users
         </h1>
         <div className="usersDiv">
-            {isLoading && <p className="headAndParagraphs paragraph">Loading...</p>}
+            {isLoading && <p style={{color: "rgb(178, 178, 178)"}}>Loading...</p>}
 
            {users.map((user, index)=> (
                 <UserCard key={index} {...user}  />

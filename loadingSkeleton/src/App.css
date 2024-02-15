@@ -1,88 +1,79 @@
-body{
+body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
-.userCard{
+.userCard {
   border: 1px solid grey;
   width: 40%;
-  height:10em;
+  height: 10em;
   display: flex;
-  justify-content:start;
+  justify-content: start;
   gap: 1.2em;
-  padding: .5em .8em;
-  border-radius: .4em;
-  transition: all .25s ease-in-out;
+  padding: 0.5em 0.8em;
+  border-radius: 0.4em;
+  transition: all 0.25s ease-in-out;
 }
 
-.userCard:hover{
+.userCard:hover {
   background-color: #0a0a0a;
   cursor: pointer;
 }
 
-.userCardProps{
+.userCardProps {
   display: flex;
   flex-direction: column;
   height: 100%;
-  
+
   justify-content: start;
   padding: 0;
   gap: 0;
 }
 
-.userCardProps .headAndParagraphs{
-  font-size: 1em;
-  line-height: .1em;
+.userCardProps .headAndParagraphs {
+  font-size: 1.5vw;
+  line-height: 0.1em;
 }
 
-.userCardProps .headAndParagraphs.heading{
+.userCardProps .headAndParagraphs.heading {
   color: #5dd4ac;
 }
 
-
-.userCardProps .headAndParagraphs.paragraph{
+.userCardProps .headAndParagraphs.paragraph {
   color: grey;
 }
 
-
-
-.userCard img{
+.userCard img {
   border-radius: 100%;
-  width: 4em;
-  height: 4em;
+  width: 5vw;
+  height: 5vw;
 }
 
-.usersDiv{
+.usersDiv {
   display: flex;
   flex-wrap: wrap;
- 
   width: 70vw;
   justify-content: center;
   gap: 1.2em;
 }
 
-.homeContainer{
+.homeContainer {
   display: flex;
   flex-direction: column;
-  
   width: 98.9vw;
-  /* height: 100vh; */
   align-items: center;
   background-color: rgb(23, 23, 23);
-  /* padding-bottom: 1.5em; */
-  height: 100vw;
+  min-height: 100vw;
 }
 
-.postDivContainer{
-  background-color:  rgb(23, 23, 23);
+.postDivContainer {
+  background-color: rgb(23, 23, 23);
   width: 100vw;
   height: 100vh;
-  /* padding-top: 10em; */
-
 }
 
-.postDiv{
+.postDiv {
   height: auto;
   width: 30em;
   display: flex;
@@ -91,9 +82,149 @@ body{
   flex-direction: column;
   margin: 0 auto;
   padding-top: 7em;
-  
 }
 
-.postDiv .returnBack{
+.postDiv .returnBack {
   color: grey;
+}
+
+@media screen and (min-width: 480px) {
+
+  .userCard {
+    border: 1px solid grey;
+    width: 50vw;
+    height: 10em;
+    display: flex;
+    justify-content: start;
+    gap: 1.2em;
+    padding: 0.5em 0.8em;
+    border-radius: 0.4em;
+    transition: all 0.25s ease-in-out;
+  }
+  .userCard img {
+    border-radius: 100%;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .userCardProps .headAndParagraphs {
+    font-size: 2vw;
+    line-height: 0.1em;
+  }
+
+  
+
+  .postDiv {
+    height: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 7em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .usersDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 1.2em;
+   
+  }
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 98.9vw;
+    align-items: center;
+    background-color: rgb(23, 23, 23);
+    min-height: 100vw;
+   
+  }
+  
+  .userCard {
+    border: 1px solid grey;
+    width:40vw;
+    height: 10em;
+    display: flex;
+    justify-content: start;
+    gap: 1.2em;
+    padding: 0.5em 0.8em;
+    border-radius: 0.4em;
+    transition: all 0.25s ease-in-out;
+  }
+  .userCard img {
+    border-radius: 100%;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .userCardProps .headAndParagraphs {
+    font-size: 1.6vw;
+    line-height: 0.1em;
+  }
+
+  
+
+  .postDiv {
+    height: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 7em;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .usersDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    gap: 1.2em;
+    
+  }
+  .userCard {
+    border: 1px solid grey;
+    width: 30vw;
+    height: 10em;
+    display: flex;
+    justify-content: start;
+    gap: 1.2em;
+    padding: 0.5em 0.8em;
+    border-radius: 0.4em;
+    transition: all 0.25s ease-in-out;
+  }
+  .userCard img {
+    border-radius: 100%;
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .userCardProps .headAndParagraphs {
+    font-size: 1.4vw;
+    line-height: 0.1em;
+  }
+
+  
+
+  .postDiv {
+    height: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 7em;
+  }
 }

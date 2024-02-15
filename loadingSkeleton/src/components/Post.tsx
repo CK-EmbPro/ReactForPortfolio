@@ -29,7 +29,7 @@ const Post = () => {
         <div className="postDiv">
 
       {isLoading ? (
-          <p style={{ color: "black" }}>Loading...</p>
+          <p style={{ color: "rgb(178, 178, 178)" }}>Loading...</p>
           ) : (
               <>
           <Link className="returnBack" to={"/"}>Back</Link>

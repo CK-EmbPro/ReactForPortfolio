@@ -17,9 +17,9 @@ const UserCard = ({name, email, username, phone, id}: UserCardProps) => {
         <img src={`https://picsum.photos/200`} alt="user" className="" />
         <div className="userCardProps">
             <h3 className="headAndParagraphs heading">{name}</h3>
-            <p className="headAndParagraphs paragraph">Email: {email}</p>
-            <p className="headAndParagraphs paragraph">Username: {username}</p>
-            <p className="headAndParagraphs paragraph">Phone: {phone}</p>
+            <p className="headAndParagraphs paragraph">Email:{email}</p>
+            <p className="headAndParagraphs paragraph">Username:{username}</p>
+            <p className="headAndParagraphs paragraph">Phone:{phone}</p>
         </div>
     </div>
   )
