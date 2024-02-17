@@ -93,9 +93,9 @@ const StopWatch = () => {
     <div className="clockContainer">
       <div className="clockInfoContainer">
         {leadingZero(hours)}
-        <Separator />
+        {/* <Separator /> */}:
         {leadingZero(minutes)}
-        <Separator />
+        {/* <Separator /> */}:
         {leadingZero(seconds)}
       </div>
 
