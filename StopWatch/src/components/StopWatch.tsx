@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const StopWatch = () => {
   const [tick, setTick] = useState<number | null>(null)
-  const [totalSeconds, setTotalSeconds] = useState(0)
+  const [totalSeconds, setTotalSeconds] = useState<number>(0)
 
   const Separator = () => {
     return (
@@ -30,37 +30,40 @@ const StopWatch = () => {
   const hours = getHours()
 
   const increment = () => {
-    setTotalSeconds(prevSeconds => prevSeconds++)
+    setTotalSeconds(prevSeconds => prevSeconds+1)
   }
 
   const startCount = () => {
     if (tick) {
       clearInterval(tick)
     }
-
-    setTick(setInterval(() => { increment }, 1000))
+    setTick(setInterval(() => increment(), 1000))
   }
 
 
   const resumeCount = () => {
     if (tick) clearInterval(tick)
-    setTick(setInterval(() => { increment }, 1000))
+    setTick(setInterval(() => increment(), 1000))
   }
 
 
-  const StopCount = () => {
+  const stopCount = () => {
     if (tick) clearInterval(tick)
     setTick(null)
   }
 
   const resetCount = () => {
     if (tick) clearInterval(tick)
+    setTick(null)
     setTotalSeconds(0)
   }
 
 
 
   let started = hours > 0 || minutes > 0 || seconds > 0
+  console.log("hours", hours)
+  console.log("min", minutes)
+  console.log("sec", seconds)
   let buttons: null | React.ReactNode = null
 
   if (!tick && !started) {
@@ -70,15 +73,15 @@ const StopWatch = () => {
       </button>
     )
   } else if (!tick && started) {
-    <div>
-      <button className="startButton" onClick={resumeCount}>Resume</button>
-      <button onClick={resetCount}>Reset</button>
-    </div>
+    buttons =(<div className="resumeReset">
+    <button className="resumeBtn" onClick={resumeCount}>Resume</button>
+    <button className="resetBtn" onClick={resetCount}>Reset</button>
+  </div>)
   } else {
-    <div>
-      <button onClick={StopCount}>Stop</button>
-      <button onClick={resetCount}>Reset</button>
-    </div>
+    buttons = (<div className="resumeReset">
+      <button className="stopBtn" onClick={stopCount}>Stop</button>
+      <button className="resetBtn" onClick={resetCount}>Reset</button>
+    </div>)
   }
 
   const leadingZero = (num: number) =>{
@@ -97,6 +100,7 @@ const StopWatch = () => {
       </div>
 
       {buttons}
+      
     </div>
   )
 }
