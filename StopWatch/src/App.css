@@ -5,7 +5,7 @@
 }
 
 .clockInfoContainer{
-  font-size: 7em;
+  font-size: 12vw;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -21,12 +21,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4em;
+  gap: 4vw;
   background-color: black;
 }
 
 .startButton{
-  font-size: 1.7em;
+  font-size: 2.5vw;
   background-color: rgb(12, 119, 81);
   color: white;
   padding: .4em .8em;
@@ -35,16 +35,14 @@
 }
 
 .stopBtn{
-  font-size: 1.7em;
+  font-size: 2.5vw;
   background-color:red;
   color: white;
   padding: .4em .8em;
   border: none;
   cursor: pointer;
 }
-.resumeReset{
-  
-}
+
 
 .resumeReset .resumeBtn{
   background-color:  rgb(12, 119, 81);
@@ -60,7 +58,7 @@
   background: transparent;
   border: none;
   padding: .4em .8em;
-  font-size: 1.7em;
+  font-size: 2.5vw;
   color: rgb(73, 73, 73);
   cursor: pointer;
 }
